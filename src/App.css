@@ -1,0 +1,118 @@
+body {
+    background-color: #1B1B1D;
+    color:#DAC8FD;
+    font-family:'Segoe UI';
+}
+.navbar{
+    background-color: #712CF9;
+}
+.nav-link {
+    color: #DAC8FD;
+    font-weight: 600;
+}
+a.nav-link:hover{
+    color: #3C3251;
+    transform: scale(1.1);
+}
+.navbar-brand {
+    color: #DAC8FD;
+    font-weight: 600;
+}
+.navbar-brand:hover{
+    color:#3C3251;
+}
+input.form-control{
+    background-color: #282A36;
+    width: 100%;
+    border: 1px ;
+    color: #DAC8FD;
+}
+input.form-control:focus{
+    background-color: #1B1B1D;
+    border-bottom:2px solid #DAC8FD;
+    color: #DAC8FD;
+}
+.col {
+    flex: 0 0 0%;
+}
+
+.card {
+    background-color: #282A36;
+    color:#DAC8FD;
+    margin-top: 3rem;
+    width: 20rem;
+}
+
+.btn {
+    background-color: #3C3251;
+    border: 1px solid #712CF9;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #1B1B1D;
+    color: #712CF9;
+    border: 1px solid #712CF9;
+}
+.card .card-img-top {
+    height: 20rem;
+}
+.container.productosForm {
+    margin-top: 10rem;
+}
+
+.productosForm .row {
+    margin:0;
+    justify-content: center;
+    display: block;
+}
+.textDisponible, .titleAdmin{
+    padding-top: 10%;
+    text-align: center;
+}
+.textAdmin{
+    color: #712CF9;
+    width: 30vw;
+    text-align: center;
+}
+.adminContainer .row {
+    justify-content: center;
+}
+.inicioText a {
+    text-decoration: none;
+    color: #1B1B1D;
+    background-color: #712CF9;
+    padding: 0.8%;
+}
+h3 a:hover {
+    background-color: #DAC8FD;
+}
+h1, h3 {
+    font-weight: 700;
+}
+
+.inicioWrapp {
+    padding-top: 30%;
+}
+
+.table tbody tr td, table tr th{
+    background-color: #342a48;
+}
+.table tr th  {
+    background-color: #3C3251;
+}
+.table tr th , .table tr td {
+    border: 2px solid #712CF9;
+    color: #DAC8FD;
+}
+
+table.table {
+    width: 50rem;
+}
+
+@media (min-width: 768px) {
+    .productosForm .row {
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
