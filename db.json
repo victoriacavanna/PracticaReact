@@ -1,11 +1,4 @@
 {
   "productos": [
-    {
-      "nombre": "Computadora",
-      "precio": "4000",
-      "stock": "4",
-      "img": "https://picsum.photos/200/300?random=${producto.id}",
-      "id": 1
-    }
   ]
 }
