@@ -1,6 +1,6 @@
-import React from 'react'
-import CardProductos from '../productos/CardProductos';
 
+import CardProductos from '../productos/CardProductos';
+import {Container, Row} from 'react-bootstrap'
 const Catalogo = () => {
   return (
     <Container >

@@ -63,7 +63,7 @@ const ProductsContext = ({ children }) => {
         try {
             await axios.put(`http://localhost:3001/productos/${producto.id}`, producto);
             //Editar productos
-            await getProducts();
+            getProducts();
         } catch (error){
             console.log(producto);
         }

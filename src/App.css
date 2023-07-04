@@ -108,7 +108,13 @@ h1, h3 {
 table.table {
     width: 50rem;
 }
-
+.modal-content {
+    background-color: #282A36;
+}
+.formEdit input {
+    width: 20rem;
+    background-color: #3C3251;
+}
 @media (min-width: 768px) {
     .productosForm .row {
         width: 30rem;

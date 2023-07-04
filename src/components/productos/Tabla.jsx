@@ -1,11 +1,11 @@
-import React, { useContext, Fragment, useState} from 'react';
+import { useContext, Fragment, useState} from 'react';
 import { Table, Modal, Button } from 'react-bootstrap';
 import { ProductosContext } from '../../context/ProductsContext';
 import FormUpdateProductos from './FormUpdateProductos';
 
 const Tabla = () => {
   const { productos, deleteProducts } = useContext(ProductosContext);
-
+  const { updateProducto } = useContext(ProductosContext);
   //Para actualizar producto editado
   const [editProducto, setEditProducto] = useState();
 
@@ -51,7 +51,8 @@ const Tabla = () => {
                   <td>{producto.stock}</td>
                   <td>{producto.img}</td>
                   <td>
-                    <button className='btn mb-1 me-2'onClick={() => handleEdit(producto)}>Editar</button>
+                  {/*Se usa función flecha en el atributo onClick para pasar el producto al hacer clic en el botón */}
+                    <button className='btn mb-1 me-2' onClick={() => handleEdit(producto)}>Editar</button>
                     <button className='btn' onClick={() => handleDelete(producto.id)}>
                       Eliminar
                     </button>
@@ -70,7 +71,7 @@ const Tabla = () => {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>Editar producto</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <FormUpdateProductos editProducto={editProducto} handleClose={handleClose}/> {/*Pasar por props el producto seleccionado*/}

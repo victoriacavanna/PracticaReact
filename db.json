@@ -1,18 +1,25 @@
 {
   "productos": [
     {
-      "nombre": "mouse",
-      "precio": "234",
-      "stock": "2",
-      "img": "https://picsum.photos/200/300?random=${producto.id}",
-      "id": 1
-    },
-    {
-      "nombre": "auriculares",
+      "nombre": "auricular",
       "precio": "200",
       "stock": "1",
       "img": "https://picsum.photos/200/300?random=${producto.id}",
       "id": 2
+    },
+    {
+      "nombre": "computadora",
+      "precio": "2000",
+      "stock": "5",
+      "img": "https://picsum.photos/200/300?random=${producto.id}",
+      "id": 3
+    },
+    {
+      "nombre": "Televisor",
+      "precio": "125",
+      "stock": "2",
+      "img": "https://picsum.photos/200/300?random=${producto.id}",
+      "id": 4
     }
   ]
 }
