@@ -2,16 +2,17 @@ import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { useContext } from 'react';
 import { ProductosContext } from '../../context/ProductsContext';
 const CardProductos = () => {
+    //Traer array de productos del contexto
     const { productos, setProductos } = useContext(ProductosContext);
     return (
+        //Mostrar mensaje si no hay productos
         <>
-            <Container >
-                <h2 className='textDisponible'>Productos disponibles</h2>
-                <Row>
+                       
                     {productos === undefined ? (
                         <h2>Cargando...</h2>
                     ) : (
                         productos.map((producto) => (
+                            //Cada columna tiene un identificador unico 
                             <Col key={producto.id}>
                                 <Card>
                                     <Card.Img variant="top" src={producto.img} />
@@ -27,8 +28,6 @@ const CardProductos = () => {
                         ))
                     )
             }
-                </Row>
-            </Container>
         </>
     )
 }

@@ -1,4 +1,18 @@
 {
   "productos": [
+    {
+      "nombre": "mouse",
+      "precio": "234",
+      "stock": "2",
+      "img": "https://picsum.photos/200/300?random=${producto.id}",
+      "id": 1
+    },
+    {
+      "nombre": "auriculares",
+      "precio": "200",
+      "stock": "1",
+      "img": "https://picsum.photos/200/300?random=${producto.id}",
+      "id": 2
+    }
   ]
 }

@@ -49,6 +49,7 @@ const ProductsContext = ({ children }) => {
             //Eliminamos datos de base de datos
             const response = await axios.delete(`http://localhost:3001/productos/${productoId}`);
             console.log(response);
+            //Filtra array eliminando el producto del id indicado
             setProductos(productos.filter((producto) => producto.id !== productoId));
             window.location.reload();
         } catch (error) {
@@ -57,10 +58,22 @@ const ProductsContext = ({ children }) => {
 
     }
 
+    //Put --> editar producto
+    const updateProducto = async (producto) => {
+        try {
+            await axios.put(`http://localhost:3001/productos/${producto.id}`, producto);
+            //Editar productos
+            await getProducts();
+        } catch (error){
+            console.log(producto);
+        }
+    }
+
 
 return (
+    //Se define el valor de proveedor con propiedades -> hijos tengan acceso
     <>
-        <ProductosContext.Provider value={{ productos, setProductos, addProducts, deleteProducts }}>{children}</ProductosContext.Provider>
+        <ProductosContext.Provider value={{ productos, setProductos, addProducts, deleteProducts, updateProducto }}>{children}</ProductosContext.Provider>
     </>
 )
 }
